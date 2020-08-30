@@ -1,5 +1,6 @@
 ﻿using Email_API.DTOs;
 using Email_API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -20,6 +21,7 @@ namespace Email_API.Controllers
         /// Send Email to a Email Address.
         /// </summary>
         [HttpPost]
+        [Authorize]
         public IActionResult SendEmail([FromBody] EmailRequestDto email)
         {
             _emailService.SendEmail(email);
