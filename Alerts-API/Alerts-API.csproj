@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Alerts_API</RootNamespace>
+    <UserSecretsId>fc2fbc11-511f-4c65-802d-af58abcd6b76</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
